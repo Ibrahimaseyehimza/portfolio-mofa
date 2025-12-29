@@ -9,6 +9,9 @@ import photoshop from '../../assets/Photoshop1.jpg'
 import illustrator from '../../assets/illustratror.jpg'
 import figma from '../../assets/figma.jpg'
 import photographe from '../../assets/photographe.jpg'
+import indesign from '../../assets/indesign.jpeg'
+import canva from '../../assets/canva.jpeg'
+
 
 export default function Skills() {
   return (
@@ -18,7 +21,8 @@ export default function Skills() {
             data-aos='fade-up' 
             data-aos-delay='200' 
             className='md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pd-10 border-b border-orange-400'>
-                <h1 data-aos='fade-right' data-aos-delay='500' className='sm:text-4xl text-2xl font-medium title-font mb-2 text-white '>Skills</h1>
+                {/* <h1 data-aos='fade-right' data-aos-delay='500' className='sm:text-4xl text-2xl font-medium title-font mb-2 text-white '>Skills</h1> */}
+                <h1 data-aos='fade-right' data-aos-delay='500' className='sm:text-4xl text-2xl font-medium title-font mb-2 text-white '>Compétences</h1> <br />
                 <p data-aos='fade-right' data-aos-delay='500' className='leading-relaxed text-base'>
                     {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perferendis ut,
                      rerum nulla labore ipsum aliquid magnam maxime esse.
@@ -48,8 +52,14 @@ export default function Skills() {
                     <img src={figma} alt="" className='rounded-full w-24 h-24 object-cover'/>
                 </li>
                 <li className='lg:w-1/3 mb-4 w-1/2'>
-                    <img src={webdesign} alt="" className='rounded-full w-24 h-24 object-cover'/>
+                    <img src={indesign} alt="" className='rounded-full w-24 h-24 object-cover'/>
                 </li>
+                <li className='lg:w-1/3 mb-4 w-1/2'>
+                    <img src={canva} alt="" className='rounded-full w-24 h-24 object-cover'/>
+                </li>
+                {/* <li className='lg:w-1/3 mb-4 w-1/2'>
+                    <img src={webdesign} alt="" className='rounded-full w-24 h-24 object-cover'/>
+                </li> */}
                 <li className='lg:w-1/3 mb-4 w-1/2'>
                     <img src={photographe} alt="" className='rounded-full w-24 h-24 object-cover'/>
                 </li>

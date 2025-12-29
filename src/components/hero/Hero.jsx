@@ -5,6 +5,8 @@ import CV from './CV.pdf'
 import img from '../../assets/img.png'
 import img_himza from '../../assets/Himza.jpg'
 import img_mofa from '../../assets/mofa.jpeg'
+import { FaGithub, FaLinkedin, FaBehance, FaInstagram, FaTiktok, FaFacebookF } from "react-icons/fa";
+
 
 export default function Hero() {
   return (
@@ -25,19 +27,109 @@ export default function Hero() {
                      className='absolute top-[350px] left-44 md:top-[-30px] md:left-[450px] transform
                     -translate-x-1/2 -translate-y-1/2 w-20 h-20'/>
                 {/* <h1 className='title-font sm:text-4xl text-4xl mb-4 font-bold text-white'>Hi! I'm ADELINE</h1> */}
-                <h1 className='title-font sm:text-4xl text-4xl mb-4 font-bold text-white'>Bonjour! Je suis Mofa</h1>
+                {/* <h1 className='title-font sm:text-4xl text-4xl mb-4 font-bold text-white'>Bonjour! Je suis Mofa</h1> */}
+                <h1 className='title-font sm:text-4xl text-4xl mb-4 font-bold text-white'>Hi! It's Mofa Designer</h1>
                 {/* <p className='mb-8 leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut error quasi est labore? Laborum hic commodi architecto ex eligendi quasi. Accusantium provident ipsa illum facilis praesentium fuga aliquid, eveniet molestiae.     */}
-                <p className='mb-8 leading-relaxed'>Bonjour je suis Mouhamed Fall Disigner graphique spécialisé en création visuellle avec Photoshop Je transforme les idées en visuels créatifs et professionnels.   
+                {/* <p className='mb-8 leading-relaxed'>Bonjour je suis Mouhamed Fall Disigner graphique spécialisé en création visuellle avec Photoshop Je transforme les idées en visuels créatifs et professionnels.    */}
+                {/* <p className='mb-8 leading-relaxed'>
+                    UI/UX Designer et Infographiste polyvalent, spécialisé dans la création d'interfaces intuitives
+                    et de supports visuels percutants. Je maitrise les principaux outils de design graphique et de
+                    conception (Photoshop, Illustrator, Figma, InDesign), ce qui me permet d'allier créativité,
+                    ergonomie et sens du détail. Passionné par l'innovation visuelle, je transforme les idées
+                    en expériences utilisateurs harmonieuses et attractives.
+                </p> */}
+                <p className='mb-8 leading-relaxed'>
+                    UI/UX Designer et infographiste polyvalent, spécialisé dans la création d’interfaces
+                    intuitives et de visuels percutants. Maîtrise de Photoshop, Illustrator, Figma et
+                    InDesign pour allier créativité, ergonomie et sens du détail. Je transforme les
+                    idées en expériences visuelles attractives et efficaces
                 </p>
-                <div className='flex justify-center'>
-                    <a href={CV} download> 
-                        <button className='inline-flex text-white bg-orange-500 border-0 py-2 px-6 
-                        focus:outline-none hover:bg-orange-600 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
-                        rounded-full text-lg'>
-                            Télecharger CV
+
+                    <div className='flex justify-center'>
+                        <a href={CV} download> 
+                            <button className='inline-flex text-white bg-orange-500 border-0 py-2 px-6 
+                            focus:outline-none hover:bg-orange-600 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
+                            rounded-full text-lg'>
+                                Télecharger CV
+                            </button>
+                        </a>
+
+                    </div>
+
+                   
+
+
+
+
+                <div className="flex items-center justify-center gap-6 mt-6">
+
+                    {/* Bouton Télécharger CV */}
+                    {/* <a href={CV} download>
+                        <button
+                        className="inline-flex text-white bg-orange-500 border-0 py-2 px-6
+                        focus:outline-none hover:bg-orange-600
+                        hover:shadow-[0_0_40px_rgba(255,165,0,0.7)]
+                        rounded-full text-lg"
+                        >
+                        Télécharger CV
                         </button>
-                    </a>
+                    </a> */}
+
+                    {/* Icônes réseaux sociaux */}
+                    <div className="flex items-center gap-4">
+                        <a
+                        href="https://www.tiktok.com/@mouhamed_mofa"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 flex items-center justify-center
+                        rounded-full border border-orange-400 text-orange-400
+                        hover:bg-orange-400 hover:text-black transition"
+                        >
+                        <FaTiktok size={20} />
+                        </a>
+
+                        <a
+                        href="https://www.facebook.com/share/19XhQCDmFR"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 flex items-center justify-center
+                        rounded-full border border-orange-400 text-orange-400
+                        hover:bg-orange-400 hover:text-black transition"
+                        >
+                        <FaFacebookF size={20} />
+                        </a>
+
+                        <a
+                        href="https://www.linkedin.com/in/mouhamed-fall-3b0a42374"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 flex items-center justify-center
+                        rounded-full border border-orange-400 text-orange-400
+                        hover:bg-orange-400 hover:text-black transition"
+                        >
+                        <FaLinkedin size={20} />
+                        </a>
+
+                        <a
+                        href="https://www.instagram.com/mouhamed_mofa"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 flex items-center justify-center
+                        rounded-full border border-orange-400 text-orange-400
+                        hover:bg-orange-400 hover:text-black transition"
+                        >
+                        <FaInstagram size={20} />
+                        </a>
+                    </div>
+
                 </div>
+
+
+
+
+
+
+
                 </div>
                 <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6'>
                    {/* <img src={img} alt="hero" className='object-cover object-center rounded-full w-80 h-80' /> */}
