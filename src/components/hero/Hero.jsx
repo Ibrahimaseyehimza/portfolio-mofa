@@ -20,34 +20,24 @@ export default function Hero() {
         data-aos='fade-up'
         data-aos-delay='250'
         className='text-white body-font z-10'>
-            <div className='container mx-auto flex px-5 py-24 md:flex-row flex-col items-center'>
+            {/* <div className='container mx-auto flex px-5 py-24 md:flex-row flex-col items-center'> */}
+            <div className='container mx-auto flex gap-6 px-5 py-24 md:flex-row flex-col-reverse items-center'>
+
                 <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left
                 mb-16 md:mb-0 items-center text-center relative'>
-                    <img src={hi} data-aos='fade-up' data-aos-delay='400'
+                    {/* <img src={hi} data-aos='fade-up' data-aos-delay='400'
                      className='absolute top-[350px] left-44 md:top-[-30px] md:left-[450px] transform
-                    -translate-x-1/2 -translate-y-1/2 w-20 h-20'/>
-                {/* <h1 className='title-font sm:text-4xl text-4xl mb-4 font-bold text-white'>Hi! I'm ADELINE</h1> */}
-                {/* <h1 className='title-font sm:text-4xl text-4xl mb-4 font-bold text-white'>Bonjour! Je suis Mofa</h1> */}
-                <h1 className='title-font sm:text-4xl text-4xl mb-4 font-bold text-white'>Hi! It's Mofa Designer</h1>
-                {/* <p className='mb-8 leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut error quasi est labore? Laborum hic commodi architecto ex eligendi quasi. Accusantium provident ipsa illum facilis praesentium fuga aliquid, eveniet molestiae.     */}
-                {/* <p className='mb-8 leading-relaxed'>Bonjour je suis Mouhamed Fall Disigner graphique spécialisé en création visuellle avec Photoshop Je transforme les idées en visuels créatifs et professionnels.    */}
-                {/* <p className='mb-8 leading-relaxed'>
-                    UI/UX Designer et Infographiste polyvalent, spécialisé dans la création d'interfaces intuitives
-                    et de supports visuels percutants. Je maitrise les principaux outils de design graphique et de
-                    conception (Photoshop, Illustrator, Figma, InDesign), ce qui me permet d'allier créativité,
-                    ergonomie et sens du détail. Passionné par l'innovation visuelle, je transforme les idées
-                    en expériences utilisateurs harmonieuses et attractives.
-                </p> */}
+                    -translate-x-1/2 -translate-y-1/2 w-20 h-20'/> */}
+                <h1 className='title-font sm:text-4xl text-4xl mb-4 font-bold text-white'>Mofa Designer</h1>
                 <p className='mb-8 leading-relaxed'>
                     UI/UX Designer et infographiste polyvalent, spécialisé dans la création d’interfaces
                     intuitives et de visuels percutants. Maîtrise de Photoshop, Illustrator, Figma et
                     InDesign pour allier créativité, ergonomie et sens du détail. Je transforme les
                     idées en expériences visuelles attractives et efficaces
                 </p>
-
                     <div className='flex justify-center'>
                         <a href={CV} download> 
-                            <button className='inline-flex text-white bg-orange-500 border-0 py-2 px-6 
+                            <button className='inline-flex text-white bg-orange-500 border-0 py-2 gap-8 px-6 
                             focus:outline-none hover:bg-orange-600 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
                             rounded-full text-lg'>
                                 Télecharger CV
@@ -55,26 +45,7 @@ export default function Hero() {
                         </a>
 
                     </div>
-
-                   
-
-
-
-
                 <div className="flex items-center justify-center gap-6 mt-6">
-
-                    {/* Bouton Télécharger CV */}
-                    {/* <a href={CV} download>
-                        <button
-                        className="inline-flex text-white bg-orange-500 border-0 py-2 px-6
-                        focus:outline-none hover:bg-orange-600
-                        hover:shadow-[0_0_40px_rgba(255,165,0,0.7)]
-                        rounded-full text-lg"
-                        >
-                        Télécharger CV
-                        </button>
-                    </a> */}
-
                     {/* Icônes réseaux sociaux */}
                     <div className="flex items-center gap-4">
                         <a
@@ -123,16 +94,8 @@ export default function Hero() {
                     </div>
 
                 </div>
-
-
-
-
-
-
-
                 </div>
                 <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6'>
-                   {/* <img src={img} alt="hero" className='object-cover object-center rounded-full w-80 h-80' /> */}
                    <img src={img_mofa} alt="hero" className='object-cover object-center rounded-full w-80 h-80' />
                 </div>
             </div>
